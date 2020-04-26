@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 18 Apr, 2020 7:15:17 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="mypackage.Medicine" table="medicine" catalog="drugs_and_diseases" optimistic-lock="version">
+        <id name="disease" type="string">
+            <column name="disease" length="50" />
+            <generator class="assigned" />
+        </id>
+        <property name="medicine" type="string">
+            <column name="medicine" length="50" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

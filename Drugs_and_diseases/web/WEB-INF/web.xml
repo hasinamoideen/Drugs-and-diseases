@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>add_medicine</servlet-name>
+        <servlet-class>add_medicine</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>search_medicine</servlet-name>
+        <servlet-class>search_medicine</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>signup_done</servlet-name>
+        <servlet-class>signup_done</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>add_medicine</servlet-name>
+        <url-pattern>/add_medicine</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>search_medicine</servlet-name>
+        <url-pattern>/search_medicine</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>signup_done</servlet-name>
+        <url-pattern>/signup_done</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+</web-app>
